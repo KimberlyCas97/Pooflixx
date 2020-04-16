@@ -15,6 +15,7 @@ public class Contenido {
     public static List<Actor> actores = new ArrayList<>();
 
     public Director director;
+    public int calificacion;
 
     // Metodos
 
