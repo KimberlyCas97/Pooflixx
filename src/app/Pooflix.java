@@ -38,6 +38,7 @@ public class Pooflix {
     public void inicializarCatalogo() {
         this.agregarComoConociATuMadre();
         this.agregarBreakingBad();
+        this.agregarWalkingDead();
     }
 
     public void agregarBreakingBad() {
@@ -97,6 +98,37 @@ public class Pooflix {
         
         comoConociATuMadre.temporadas.add(t1);
         this.series.add(comoConociATuMadre);
+
+    
+    }
+    public void agregarWalkingDead(){
+        Serie walkingDead = new Serie();
+        walkingDead.titulo = "Walking Dead";
+        
+        Genero genero2 = new Genero();
+        genero2.nombre = "Acción";
+        walkingDead.generos.add(genero2);
+
+        Temporada t3 = new Temporada();
+        t3.numero = 3;
+        
+        Episodio epi1 = new Episodio();
+        epi1.nombre = "Semilla"; 
+        epi1.numero = 1;
+        epi1.duracion = 43;
+
+        t3.episodios.add(epi1);
+        walkingDead.temporadas.add(t3);
+
+        Episodio epi5 = new Episodio();
+        epi5.nombre = "Da la orden";
+        epi5.numero = 5; 
+        epi5.duracion = 43;
+
+        t3.episodios.add(epi5);
+        walkingDead.temporadas.add(t3);
+        this.series.add(walkingDead);
+        
 
     
     }
