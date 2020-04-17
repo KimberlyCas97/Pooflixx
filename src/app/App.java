@@ -10,13 +10,14 @@ public class App {
 
         miPooflix.inicializarCatalogo();
 
-        Serie bb = miPooflix.buscarSerie("Como Conoci a Tu Madre");
+        Serie bb = miPooflix.buscarSerie("Walking Dead");
 
-        Temporada laMejorTemporada = bb.getTemporada(1);
+        Temporada laMejorTemporada = bb.getTemporada(3);
 
-        Episodio elTop;
+        Webisodio elTop;
 
-        elTop = laMejorTemporada.getEpisodio(1);
+        elTop = laMejorTemporada.getWebisodio(1);
+
 
         elTop.reproducir();
     }

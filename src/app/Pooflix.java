@@ -128,6 +128,17 @@ public class Pooflix {
         t3.episodios.add(epi5);
         walkingDead.temporadas.add(t3);
         this.series.add(walkingDead);
+
+        Webisodio web1 = new Webisodio();
+        web1.nombre = "A New Day";
+        web1.numero = 1;
+        web1.duracion = 3;
+        web1.direccion = "hppt/A New Day/.";
+
+        t3.webisodios.add(web1);
+
+
+
         
 
     
