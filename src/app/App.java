@@ -10,13 +10,13 @@ public class App {
 
         miPooflix.inicializarCatalogo();
 
-        Serie bb = miPooflix.buscarSerie("Breaking Bad");
+        Serie bb = miPooflix.buscarSerie("Como Conoci a Tu Madre");
 
-        Temporada laMejorTemporada = bb.getTemporada(5);
+        Temporada laMejorTemporada = bb.getTemporada(1);
 
         Episodio elTop;
 
-        elTop = laMejorTemporada.getEpisodio(7);
+        elTop = laMejorTemporada.getEpisodio(1);
 
         elTop.reproducir();
     }

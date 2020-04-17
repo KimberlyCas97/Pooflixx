@@ -36,6 +36,7 @@ public class Pooflix {
     }
 
     public void inicializarCatalogo() {
+        this.agregarComoConociATuMadre();
         this.agregarBreakingBad();
     }
 
@@ -67,6 +68,37 @@ public class Pooflix {
         t5.episodios.add(epOtro);
         breakingB.temporadas.add(t5);
         this.series.add(breakingB);
+    }
+
+    public void agregarComoConociATuMadre(){
+        Serie comoConociATuMadre = new Serie();
+        comoConociATuMadre.titulo = "Como Conoci a Tu Madre";
+
+        Genero genero1 = new Genero();
+        genero1.nombre = "Comedia";
+        comoConociATuMadre.generos.add(genero1);
+
+        Temporada t1 = new Temporada();
+        t1.numero = 1;
+
+        Episodio epi1 = new Episodio();
+        epi1.nombre = "Piloto";
+        epi1.numero = 1;
+        epi1.duracion = 23; 
+
+        t1.episodios.add(epi1);
+
+        Episodio epi2 = new Episodio();
+        epi2.nombre = "Marshall se compromete";
+        epi2.numero = 2; 
+        epi2.duracion = 22; 
+
+        t1.episodios.add(epi2);
+        
+        comoConociATuMadre.temporadas.add(t1);
+        this.series.add(comoConociATuMadre);
+
+    
     }
 
 }
