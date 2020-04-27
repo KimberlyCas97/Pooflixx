@@ -8,10 +8,7 @@ public class Temporada extends Serie {
     public List<Episodio> episodios = new ArrayList<Episodio>();
     public List<Webisodio> webisodios = new ArrayList<Webisodio>();
 
-
-
-
-
+ 
 
     public int numero;
 
@@ -24,6 +21,8 @@ public class Temporada extends Serie {
         }
         return null; 
     }
+
+    
     public Webisodio getWebisodio(int numero){
         for(Webisodio web1 : this.webisodios){
             if (web1.numero == numero)

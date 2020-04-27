@@ -60,11 +60,13 @@ public class Pooflix {
 
         t5.episodios.add(ep);
 
-        Episodio epOtro = new Episodio();
+        Episodio epOtro = new Episodio(5, "Ozymandias", 41);
 
+        /*
         epOtro.numero = 5;
         epOtro.nombre = "Ozymandias";
         epOtro.duracion = 41;
+        */
 
         t5.episodios.add(epOtro);
         breakingB.temporadas.add(t5);
@@ -112,28 +114,37 @@ public class Pooflix {
         Temporada t3 = new Temporada();
         t3.numero = 3;
         
-        Episodio epi1 = new Episodio();
+        Episodio epi1 = new Episodio(1, "Semilla", 43);
+        /* 
+        Estas líneas ya no van porque ya puse los parametrios 
+        en new episodio 
         epi1.nombre = "Semilla"; 
         epi1.numero = 1;
         epi1.duracion = 43;
+        */
 
         t3.episodios.add(epi1);
         walkingDead.temporadas.add(t3);
 
-        Episodio epi5 = new Episodio();
-        epi5.nombre = "Da la orden";
+        Episodio epi5 = new Episodio(5, "Da la orden");
+        /*
+        epi5.nombre = "Da la orden"
         epi5.numero = 5; 
+        */
         epi5.duracion = 43;
+        
 
         t3.episodios.add(epi5);
         walkingDead.temporadas.add(t3);
         this.series.add(walkingDead);
 
-        Webisodio web1 = new Webisodio();
-        web1.nombre = "A New Day";
+        Webisodio web1 = new Webisodio(1, "A New Day");
+        /*web1.nombre = "A New Day";
         web1.numero = 1;
+        
         web1.duracion = 3;
         web1.direccion = "hppt/A New Day/.";
+        */
 
         t3.webisodios.add(web1);
 
